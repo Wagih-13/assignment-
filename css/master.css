@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+}
+
+.container {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.navbar-1 {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-1 .navbar-brand {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: white;
+}
+
+.dropdown-menu a {
+  color: black;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: white;
+}
+
+.navbar-1 .container-fluid {
+  justify-content: space-between;
+}
+
+.navbar-1 .collapse {
+  justify-content: flex-end;
+}
+
+.navbar-1 ul li {
+  padding: 10px 0px 10px 30px;
+}
+
+.navbar-1 ul li .nav-link {
+  padding: 0px;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-1 .nav-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-1 .nav-item::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: white;
+  bottom: 0px;
+  left: -110%;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.navbar-1 li.active::after {
+  left: 35px;
+}
+
+.navbar-1 .nav-item:hover::after {
+  left: 35px;
+}
+.navbar-1 ul .dropdown-menu {
+  padding: 15px;
+}
+
+.navbar-1 ul .dropdown-menu li {
+  padding: 5px 0px;
+}
+
+.container-fluid button i {
+  color: white;
+  font-size: 30px;
+}
+
+.home_section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.home_section h1 {
+  color: white;
+  font-size: 72px;
+}
+.home_section p {
+  color: white;
+  font-size: 40px;
+}
+
+.navbar-1 .offcanvas {
+  background-color: transparent;
+}
+
+.navbar-1 .offcanvas.offcanvas-start {
+  top: 40px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  width: auto;
+}
+
+.navbar-1 .offcanvas-header button {
+  background-color: white;
+}
+.navbar-1 .offcanvas-header {
+  justify-content: flex-end;
+  background-color: transparent;
+}
+
+.navbar-1 .offcanvas-body {
+  background-color: white;
+}
+
+.navbar-1 .offcanvas-body ul {
+  padding: 20px;
+}
+.navbar-1 .offcanvas-body ul li {
+  list-style: none;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.navbar-1 .offcanvas-body ul li a {
+  color: #4e4e4e;
+  text-decoration: none;
+  font-size: 22px;
+
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.navbar-1 .offcanvas-body ul li:hover a {
+  color: #0078ff;
+}
